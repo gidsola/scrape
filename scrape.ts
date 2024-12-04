@@ -197,29 +197,3 @@ export async function learnUrl(domain?: string): Promise<PageContent[] | Error> 
   console.log("Returned", returned);
   return returned;
 };
-
-
-
-
-
-//const ready = await prepareFromWebsite('drive', "https://www.website.here");
-//const ready = await prepareFromGooglePDF('drive', "https://drive.google.com/file/");
-
-// const question = 'Present the document in a conversational manner. Be sure to be concise and informative.';
-// const useColl = 'drive';
-
-// async function dostuff() {
-// const result = await textualProximitySearch(useColl, question, 20);
-
-// const knowledge = [];
-
-// for await (const object of result.objects) {
-//   Object.entries(object.properties).forEach(([key, value]) => {
-//     knowledge.push(key.toString() + "=" + value.toString() + " ");
-//   });
-// };
-// console.log("Knowledge", knowledge);
-// const ai = await PlainMistralChatCompletion(question, knowledge.join(''));
-
-// console.log("AI Response", ai.choices[0].message.content);
-// };
